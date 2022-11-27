@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Booking" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Booking">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="StartDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EndDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PersonName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CentreId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CentreEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bookings" EntityType="Self.Booking" />
+  </EntityContainer>
+</Schema>

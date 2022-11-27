@@ -1,0 +1,134 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+        }
+
+.active {
+    background-color: #04AA6D;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.box {
+    padding: 40px;
+    width:500px;
+    position: absolute;
+    left: 50%;
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    margin-top:25%;
+}
+
+
+    .box input[type="text"],
+    .box input[type="date"],
+    .box select{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #3498db;
+        padding: 10px 10px;
+        width: 250px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s
+    }
+
+    .box h1 {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500
+    }
+
+    .box input[type="text"]:focus,
+    .box input[type="date"]:focus,
+    .box select:focus {
+        width: 300px;
+        border-color: #2ecc71
+    }
+
+.button {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.button {
+    background: #2ecc71
+}
+
+.list-group {
+    width: 1000px;
+    height: 1440px;
+    margin: 10%;
+}
+
+.list-group-item {
+    margin-top: 10px;
+    border-radius: none;
+    background: #5E35B1;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px 50px 10px 50px;
+}
+
+
+    .list-group-item:hover {
+        transform: scaleX(1.1);
+    }
